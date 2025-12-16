@@ -1,1 +1,2 @@
-feature A
+this is 2-feature-b
+3 feature b
