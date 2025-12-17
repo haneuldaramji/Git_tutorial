@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 new feature b
+=======
+new develop
+>>>>>>> develop
