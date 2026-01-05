@@ -1,0 +1,20 @@
+spring:
+  # --- 🚨 필수 추가 부분: DataSource 설정 🚨 ---
+  datasource:
+    # H2 드라이버 클래스 지정
+    driver-class-name: org.h2.Driver
+    # 데이터베이스 URL (메모리 방식, 'testdb'라는 이름으로 사용)
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+  # ---------------------------------------------
+  jpa:
+    #전송 쿼리 확인
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+    #테이블 생성 후에 data.sql실행
+    defer-datasource-initialization: true
+
